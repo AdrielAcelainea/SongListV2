@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    android:backgroundTint="#3BE3E3E3"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="My Music List"
+        android:textSize="45dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="@font/soulfunkdemo"/>
+
+    <TextView
+        android:id="@+id/song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Song Title"
+        android:fontFamily="@font/punchliner"
+        android:textSize="23dp"
+        android:textColor="#0C2A85"
+        />
+
+    <EditText
+        android:id="@+id/songTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="18dp"
+        android:hint="Enter Song Title"
+        android:textColor="@color/black"
+        android:fontFamily="@font/punchliner"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/singers"
+        android:textSize="23dp"
+        android:textColor="#0C2A85"
+        android:fontFamily="@font/punchliner"/>
+
+    <EditText
+        android:id="@+id/songSinger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Singer"
+        android:fontFamily="@font/punchliner"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="#0C2A85"
+        android:fontFamily="@font/punchliner"
+        android:textSize="23dp"
+        android:text="@string/year" />
+
+    <EditText
+        android:id="@+id/songYears"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+
+        android:hint="Enter Year of release"
+        android:fontFamily="@font/punchliner"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        android:layout_marginTop="18dp"
+        android:textColor="#0C2A85"
+        android:fontFamily="@font/punchliner"
+        android:textSize="23dp"/>
+
+    <RadioGroup
+        android:id="@+id/stars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"/>
+
+        <RadioButton
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"/>
+
+        <RadioButton
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"/>
+
+        <RadioButton
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"/>
+
+        <RadioButton
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/input"
+            android:fontFamily="@font/punchliner"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/show"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/punchliner"/>
+    </LinearLayout>
+
+
+</LinearLayout>

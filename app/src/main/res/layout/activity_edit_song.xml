@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    android:backgroundTint="#3BE3E3E3"
+    android:backgroundTintMode="src_over"
+    tools:context=".EditSong">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="@font/soulfunkdemo"
+        android:text="Edit Song" />
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/punchliner"
+        android:textSize="23dp"
+        android:textColor="#0C2A85"
+        android:text="ID:" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="18dp"
+        android:hint=""
+        android:textColor="@color/black"
+        android:fontFamily="@font/punchliner"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/titlestuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="23dp"
+        android:textColor="#0C2A85"
+        android:fontFamily="@font/punchliner"
+        android:text="Title:" />
+
+    <EditText
+        android:id="@+id/editedTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/punchliner"
+        android:textColor="@color/black"
+        android:hint="Edit Song Title" />
+
+    <TextView
+        android:id="@+id/singerstuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="23dp"
+        android:textColor="#0C2A85"
+        android:fontFamily="@font/punchliner"
+        android:text="Singer:" />
+
+    <EditText
+        android:id="@+id/editedSingers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/punchliner"
+        android:textColor="@color/black"
+        android:hint="Edit Singer" />
+
+    <TextView
+        android:id="@+id/yearstuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="23dp"
+        android:textColor="#0C2A85"
+        android:fontFamily="@font/punchliner"
+        android:text="Year:" />
+
+    <EditText
+        android:id="@+id/editedYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/punchliner"
+        android:textColor="@color/black"
+        android:hint="Edit Year" />
+
+    <TextView
+        android:id="@+id/starstuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="23dp"
+        android:textColor="#0C2A85"
+        android:fontFamily="@font/punchliner"
+        android:text="Stars:" />
+
+    <RadioGroup
+        android:id="@+id/starGroupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/starr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/starr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/starr3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/starr4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/starr5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0C2A85"
+            android:fontFamily="@font/punchliner"
+            android:text="5" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/punchliner"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/punchliner"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="Delete" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/punchliner"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:text="Cancel" />
+
+</LinearLayout>

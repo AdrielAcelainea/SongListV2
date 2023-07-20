@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Song V2</string>
+    <string name="songTitle">Song Title</string>
+    <string name="singers">Singers</string>
+    <string name="year">Year</string>
+    <string name="rating">Rating</string>
+    <string name="show">Show List</string>
+    <string name="input">Insert</string>
+    <string name="starfive">Show All Songs with 5 Stars</string>
+</resources>
